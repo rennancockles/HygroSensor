@@ -1,0 +1,12 @@
+HygroSensor	KEYWORD1
+
+valueChanged	KEYWORD2
+update	KEYWORD2
+isDry	KEYWORD2
+isWet	KEYWORD2
+changedDry	KEYWORD2
+changedWet	KEYWORD2
+getValue	KEYWORD2
+
+DRY	LITERAL1
+WET	LITERAL1
