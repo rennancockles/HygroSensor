@@ -38,6 +38,11 @@ int HygroSensor::getValue()
   return _value;
 }
 
+String HygroSensor::getText()
+{
+  return isDry() ? "DRY" : "WET";
+}
+
 bool HygroSensor::isDry()
 {
   return getValue() == DRY;

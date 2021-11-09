@@ -24,7 +24,7 @@ void loop()
   }
 
   Serial.print("Sensor 0: ");
-  Serial.println(s0.getValue());
+  Serial.println(s0.getText());
 
   delay(DELAY);
 }

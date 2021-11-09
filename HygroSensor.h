@@ -30,6 +30,7 @@ class HygroSensor
     bool changedDry();
     bool changedWet();
     int getValue();
+    String getText();
 };
 
 #endif

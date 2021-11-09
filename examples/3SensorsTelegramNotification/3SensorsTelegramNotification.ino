@@ -7,7 +7,7 @@
 #include <CTBot.h>
 #include <HygroSensor.h>
 
-int DELAY = 1000 * 60 * 60 * 12;  // 12 hours
+int DELAY = 1000 * 60 * 60 * 1;  // 1 hour
 
 String WIFI_SSID  = "";
 String WIFI_PASSWORD  = "";
@@ -59,12 +59,9 @@ void loop()
     Serial.println("Dry soil at sensor 2");
   }
 
-  Serial.print("Sensor 0: ");
-  Serial.println(s0.getValue());
-  Serial.print("Sensor 1: ");
-  Serial.println(s1.getValue());
-  Serial.print("Sensor 2: ");
-  Serial.println(s2.getValue());
+  Serial.println("Sensor 0: " + s0.getText());
+  Serial.println("Sensor 1: " + s1.getText());
+  Serial.println("Sensor 2: " + s2.getText());
 
   delay(DELAY);
 }
